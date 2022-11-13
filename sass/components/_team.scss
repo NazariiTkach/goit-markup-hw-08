@@ -1,9 +1,14 @@
 .team-list {
   list-style: none;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
   }
 }
 
@@ -19,9 +24,10 @@
     }
   }
 
-  @media (min-width: 1200px) {
-    width: 270px;
+  @media (min-width: 768px) {
+    margin: 15px;
   }
+
 }
 
 .team-list__container {

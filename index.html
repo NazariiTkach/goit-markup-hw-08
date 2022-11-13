@@ -26,9 +26,12 @@
             <a href="./index.html" class="logo"
               >Web<span class="logo__text">Studio</span></a
             >
-            <button class="mobile-menu__cross js-open-menu" type="button">
-              <svg width="40" height="40" aria-label="Кнопка мобільгого меню">
-                <use class="menu-button__burger" href="./images/symbol-defs.svg#icon-burger-menu"></use>
+            <button class="menu__button js-open-menu" type="button">
+              <svg 
+              width="40" 
+              height="40" 
+              aria-label="Кнопка мобільго меню">
+                <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
               </svg>
             </button>
             <ul class="site-nav">
@@ -65,12 +68,12 @@
     <main>
 
       <!-- Hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="button" data-modal-open type="button">Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Features -->
       <section class="section">
@@ -183,10 +186,8 @@
 
                 <img src="./images/Ihor-270.jpg" 
                 alt="фото Ігора Дем'яненка" 
-                
                 />
               </picture>
-              
               <div class="team-list__container">
                 <h3 class="team-list__title">Ігор Дем'яненко</h3>
                 <p class="team-list__text">Product Designer</p>
@@ -215,11 +216,16 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                src="./images/Olha-270.jpg"
-                alt="фото Ольги Рєпіної"
-                width="270"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/Olha-270.jpg 1x, ./images/Olha-540-@2x.jpg 2x" sizes="270">
+              
+                <source media="(min-width: 768px)" srcset="./images/Olha-354.jpg 1x, ./images/Olha-708-@2x.jpg 2x" sizes="354">
+              
+                <source media="(max-width: 767px)" srcset="./images/Olha-450.jpg 1x, ./images/Olha-900-@2x.jpg 2x" sizes="450">
+              
+                <img src="./images/Olha-270.jpg" 
+                alt="фото Ольги Рєпіної"/>
+              </picture>
               <div class="team-list__container">
                 <h3 class="team-list__title">Ольга Рєпіна</h3>
                 <p class="team-list__text">Frontend Developer</p>
@@ -248,11 +254,16 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                src="./images/Mykola-270.jpg"
-                alt="фото Миколи Тарасова"
-                width="270"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/Mykola-270.jpg 1x, ./images/Mykola-540-@2x.jpg 2x" sizes="270">
+              
+                <source media="(min-width: 768px)" srcset="./images/Mykola-354.jpg 1x, ./images/Mykola-708-@2x.jpg 2x" sizes="354">
+              
+                <source media="(max-width: 767px)" srcset="./images/Mykola-450.jpg 1x, ./images/Mykola-900-@2x.jpg 2x" sizes="450">
+              
+                <img src="./images/Mykola-270.jpg" 
+                alt="фото Миколи Тарасова"/>
+              </picture>
               <div class="team-list__container">
                 <h3 class="team-list__title">Микола Тарасов</h3>
                 <p class="team-list__text">Marketing</p>
@@ -281,11 +292,17 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                src="./images/Mykhailo-270.jpg"
-                alt="фото Михайла Єрмакова"
-                width="270"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/Mykhailo-270.jpg 1x, ./images/Mykhailo-540-@2x.jpg 2x" sizes="270">
+              
+                <source media="(min-width: 768px)" srcset="./images/Mykhailo-354.jpg 1x, ./images/Mykhailo-708-@2x.jpg 2x" sizes="354">
+              
+                <source media="(max-width: 767px)" srcset="./images/Mykhailo-450.jpg 1x, ./images/Mykhailo-900-@2x.jpg 2x" sizes="450">
+              
+                <img src="./images/Mykhailo-270.jpg" 
+                alt="фото Михайла Єрмакова"/>
+              </picture>
+              
               <div class="team-list__container">
                 <h3 class="team-list__title">Михайло Єрмаков</h3>
                 <p class="team-list__text">UI Designer</p>
@@ -361,40 +378,30 @@
     <footer class="section-footer">
       <div class="container">
         <div class="footer-all">
-          <div>
-             <a href="./index.html" class="logo"
-                >Web<span class="logo__text logo__text--inverse">Studio</span></a
-              >
-             <address>
+          <div class="tablet--position">
+            <div>
+              <a href="./index.html" class="logo">Web<span class="logo__text logo__text--inverse">Studio</span></a>
+              <address>
                 <ul class="adress">
                   <li class="adress__item">
-                    <a
-                      href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      class="adress__text"
-                      >м. Київ, пр-т Лесі Українки, 26</a
-                    >
-                  </li>
-                  <li  class="adress__item">
-                    <a href="mailto:info@devstudio.com" class="adress__mail"
-                      >info@devstudio.com</a
-                    >
+                    <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
+                      class="adress__text">м. Київ, пр-т Лесі Українки, 26</a>
                   </li>
                   <li class="adress__item">
-                    <a href="tel:380961111111" class="adress__tel"
-                      >+38 096 111 11 11</a
-                    >
+                    <a href="mailto:info@devstudio.com" class="adress__mail">info@devstudio.com</a>
+                  </li>
+                  <li class="adress__item">
+                    <a href="tel:380961111111" class="adress__tel">+38 096 111 11 11</a>
                   </li>
                 </ul>
               </address>
             </div>
             <div>
-             <p class="footer-title">Приєднуйтесь</p>
-             <ul class="social social--position">
+              <p class="footer-title">Приєднуйтесь</p>
+              <ul class="social social--position">
                 <li>
                   <a href="" class="social__link social__link--inverse">
-                   <svg width="20" height="20">
+                    <svg width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
@@ -421,7 +428,9 @@
                   </a>
                 </li>
               </ul>
-        </div>
+            </div>
+          </div>
+          
         <form>
           <p class="footer-title footer-title--position">Підпишіться на розсилку</p>
           <div class="footer-label">

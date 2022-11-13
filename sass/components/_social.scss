@@ -25,6 +25,16 @@
 }
 
 .social--position {
+
+  @media (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+
+  // @media (min-width: 768px) {
+  //   margin-left: 70px;
+  //     margin-right: 93px;
+  // }
   // margin-left: 70px;
   // margin-right: 93px;
 }
