@@ -50,8 +50,25 @@
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   list-style: none;
+
+  @media (max-width: 767px) {
+    column-gap: 8px;
+    row-gap: 15px;
+    justify-content: start;
+    width: 400px;
+    flex-wrap: wrap;
+   }
+  
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
 }
 
 .button-nav__item {
