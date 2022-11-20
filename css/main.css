@@ -270,13 +270,13 @@ body.modal-open {
 }
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
   background-color: #ffffff;
   list-style: none;
 }
 @media (min-width: 768px) {
   .projects {
+    display: flex;
+    flex-wrap: wrap;
     margin: -15px;
   }
 }
@@ -374,6 +374,7 @@ body.modal-open {
 
 .projects__content {
   padding: 20px 24px;
+  margin-bottom: auto;
   border: 1px solid #eeeeee;
   border-top: none;
   border-bottom-left-radius: 4px;

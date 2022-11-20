@@ -1,12 +1,14 @@
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  // gap: 30px;
+  
+  
   background-color: $white-color;
   list-style: none;
 
   @media (min-width: 768px) {
+    display: flex;
+      flex-wrap: wrap;
       margin: -15px;
+     
     }
 }
 
@@ -104,6 +106,7 @@
 
 .projects__content {
   padding: 20px 24px;
+  margin-bottom: auto;
   border: 1px solid $background-portfolio;
   border-top: none;
   border-bottom-left-radius: 4px;
@@ -124,3 +127,4 @@
   font-size: 16px;
   line-height: 1.88;
 }
+
